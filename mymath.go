@@ -20,12 +20,14 @@ func Pow(x, y float64) float64 {
 }
 
 // Max возвращает максимальное значение из двух чисел.
-func Max(x, y float64) float64 {
-	if x > y {
-		return x
-	}
-	return y
-}
+func Max(x, y float64) float64 { return math.Max(x, y) }
+
+//{
+//	if x > y {
+//		return x
+//	}
+//	return y
+//}
 
 // Min возвращает минимальное значение из двух чисел.
 func Min(x, y float64) float64 {
@@ -84,4 +86,15 @@ func Nearest(x float64) float64 {
 // Float64sEqual проверяет, равны ли два числа с плавающей точкой.
 func Float64sEqual(x, y float64) bool {
 	return math.Abs(x-y) < 1e-1
+}
+func Yn(n int, x float64) float64 { return math.Yn(n, x) }
+
+func Acos(x float64) float64 {
+	return math.Acos(x)
+}
+func Acosh(x float64) float64 {
+	return math.Acosh(x)
+}
+func Asin(x float64) float64 {
+	return math.Asin(x)
 }
