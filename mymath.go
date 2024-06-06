@@ -14,11 +14,6 @@ func Sqrt(x float64) float64 {
 	return math.Sqrt(x)
 }
 
-// Atan2 возвращает арктангенс двух аргументов.
-func Atan2(y, x float64) float64 {
-	return math.Atan2(y, x)
-}
-
 // Pow возвращает x в степени y.
 func Pow(x, y float64) float64 {
 	return math.Pow(x, y)
